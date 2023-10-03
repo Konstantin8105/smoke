@@ -4,12 +4,12 @@ go 1.20
 
 require (
 	github.com/Konstantin8105/ds v0.0.0-20230911101041-2823ea6497ce
-	github.com/Konstantin8105/ms v0.0.0-20230926174444-e6b5afed6740
-	github.com/Konstantin8105/vl v0.0.0-20230923113629-0d20b8dc5a5d
+	github.com/Konstantin8105/glsymbol v0.0.0-20230929084058-89782ab16f60
+	github.com/Konstantin8105/ms v0.0.0-20231003123835-ea2cf4f60ed4
+	github.com/Konstantin8105/vl v0.0.0-20231003122537-25ef4643335b
 )
 
 require (
-	github.com/Konstantin8105/glsymbol v0.0.0-20230929084058-89782ab16f60 // indirect
 	github.com/Konstantin8105/tf v0.0.0-20230612182433-2ec4a099d755 // indirect
 	github.com/gdamore/encoding v1.0.0 // indirect
 	github.com/gdamore/tcell/v2 v2.6.0 // indirect

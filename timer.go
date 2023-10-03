@@ -11,14 +11,17 @@ import (
 	"github.com/Konstantin8105/vl"
 )
 
+func init() {
+	vl.SpecificSymbol(false)
+}
+
 func main() {
 	ch := make(chan func() (fus bool), 1000)
 
 	var design vl.Widget
 	{
 		var list vl.List
-
-		list.Add(new(vl.Separator))
+		list.Compress()
 
 		var status vl.Text
 
@@ -42,10 +45,8 @@ func main() {
 			}
 		}()
 		list.Add(&timer)
-		list.Add(new(vl.Separator))
 
 		list.Add(&status)
-		list.Add(new(vl.Separator))
 
 		var reset vl.Button
 		reset.SetText("Reset")
@@ -53,8 +54,6 @@ func main() {
 			start = time.Now()
 		}
 		list.Add(&reset)
-
-		list.Add(new(vl.Separator))
 
 		step := int64(300) // seconds
 		var add vl.Button
@@ -64,8 +63,6 @@ func main() {
 			start = start.Add(dur)
 		}
 		list.Add(&add)
-
-
 
 		design = &list
 	}
