@@ -103,7 +103,7 @@ func DefaultFont() (_ *glsymbol.Font, err error) {
 	var (
 		low   = rune(byte(32))
 		high  = rune(byte(127))
-		scale = int32(32) // font size
+		scale = int32(16) // font size
 	)
 	return glsymbol.LoadTruetype(
 		strings.NewReader(glsymbol.DefaultEmbeddedFont),
